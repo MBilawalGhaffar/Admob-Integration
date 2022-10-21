@@ -257,10 +257,7 @@ public class InterstitialMaster {
                 Log.d(logTag, "Ad will be shown after ad_delay time.");
                 mActionOnAdClosedListener.ActionAfterAd();
             }
-
         }
-
-
     }
 
     static void show_admob_intestitial() {
@@ -291,7 +288,6 @@ public class InterstitialMaster {
                                 mActionOnAdClosedListener.ActionAfterAd();
                             }
 
-
                             @Override
                             public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
                                 super.onAdFailedToShowFullScreenContent(adError);
@@ -309,8 +305,8 @@ public class InterstitialMaster {
                     isAlreadyLoaded = false;
                     isAdmobLoaded = false;
                     isRequestSent = false;
-
                 }
+
             }, dialog_show_time);
         } catch (Exception e) {
             Log.d(logTag, "Exception: " + e.getMessage());
@@ -519,7 +515,6 @@ public class InterstitialMaster {
             try {
                 isShowing = false;
                 dialog.dismiss();
-
 
             } catch (Exception e) {
                 Log.i("TAG", "hideLoadingDialog: unable to dismiss dialog. -> ", e);

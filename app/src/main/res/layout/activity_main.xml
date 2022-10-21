@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.facebook.ads.NativeAdLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fbNativeAdContainer"
+        android:minHeight="50dp"
+        android:id="@+id/ad_card_container"
+        android:backgroundTint="@color/nativeAd_bg"
         android:layout_alignParentTop="true" />
 
 </RelativeLayout>

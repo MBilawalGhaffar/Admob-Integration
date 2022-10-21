@@ -22,7 +22,6 @@ import org.jetbrains.annotations.NotNull
 //import org.koin.core.KoinComponent
 import org.koin.core.component.KoinComponent
 
-
 class OpenApp(globalClass: ApplicationClass) : Application.ActivityLifecycleCallbacks,
     LifecycleObserver, KoinComponent {
     private var adVisible = false
