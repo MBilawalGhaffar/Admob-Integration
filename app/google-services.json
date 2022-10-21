@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "901376124870",
+    "project_id": "server-based-ids",
+    "storage_bucket": "server-based-ids.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901376124870:android:7f145424bb4cae923db4c7",
+        "android_client_info": {
+          "package_name": "com.my.newadmobimplementation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901376124870-452pe2fckebkl625mgu6c6ardg0nftdj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2WAm1RdyrZpNGqOL3-kFMufp7U7XqEaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901376124870-452pe2fckebkl625mgu6c6ardg0nftdj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

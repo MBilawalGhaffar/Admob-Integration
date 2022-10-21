@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NativeAd"
+    android:visibility="visible"
+    android:background="@color/native_ad_background"
+    android:padding="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            >
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6" />
+
+            <Button
+                android:id="@+id/adCallToAction"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/ad_banner_button_bg"
+
+                android:textColor="@color/white"
+                android:text="Open"
+                app:layout_constraintHorizontal_bias="0.9"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/ad_attribute"
+                app:layout_constraintVertical_bias="0.95" />
+
+            <TextView
+                android:id="@+id/ad_attribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_corners_2dp"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="Ad"
+                app:layout_constraintBottom_toTopOf="@+id/adHeadline"
+                app:layout_constraintVertical_bias="0"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adIconCard"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:adjustViewBounds="true"
+                android:visibility="visible"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/ad_attribute"
+
+
+                app:cardBackgroundColor="@android:color/transparent"
+
+                app:cardCornerRadius="10dp"
+                android:elevation="0dp"
+                app:cardElevation="0dp"
+                app:layout_constraintVertical_bias="0"
+
+                >
+
+                <ImageView
+                    android:id="@+id/adAppIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+
+                    android:adjustViewBounds="true"
+                    android:visibility="visible"
+                    android:contentDescription="image description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline6"
+                    app:layout_constraintTop_toBottomOf="@+id/ad_attribute"  />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+
+                android:id="@+id/adHeadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="2dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:minEms="25"
+                app:layout_constraintHorizontal_bias="0.0"
+
+                app:layout_constraintStart_toEndOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/adIconCard" />
+
+            <TextView
+                android:id="@+id/adBody"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:ellipsize="end"
+
+
+                android:text="jsfahjkfhdsajkshfdafshdjkhfdasjkhfjkhjkfhajkhdsjkahjkdfhajsfhdkafkhdjkfhjkfd"
+                android:textSize="10sp"
+                android:maxLines="2"
+                android:minEms="90"
+                android:textColor="#D8000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/adHeadline"
+                app:layout_constraintBottom_toTopOf="@+id/adCallToAction"
+                android:layout_marginBottom="5dp"/>
+
+            <com.google.android.gms.ads.nativead.MediaView
+                android:id="@+id/adMedia"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.gms.ads.nativead.NativeAdView>

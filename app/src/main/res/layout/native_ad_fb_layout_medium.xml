@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/native_ad_background"
+    android:padding="5dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <com.facebook.ads.MediaView
+        android:id="@+id/nativeAdMedia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/adChoicesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal" />
+
+        <com.facebook.ads.MediaView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adChoicesContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/nativeAdIcon"
+            android:layout_marginTop="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/nativeAdTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textStyle="bold"
+            android:text="fashdjkdsfakljdfasklj"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/nativeAdIcon" />
+
+        <TextView
+            android:id="@+id/nativeAdBody"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="fashdjkdsfakljdfaskljdSDASADSADSASDADASSDASDA"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/nativeAdSponsoredLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:marqueeRepeatLimit="marquee_forever"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nativeAdTitle" />
+
+        <TextView
+            android:id="@+id/nativeAdSponsoredLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textAlignment="center"
+            android:text="kafjklsdfjkljfdsaklj"
+            android:textColor="#656565"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/nativeAdBody"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/nativeAdCallToAction"/>
+
+
+
+        <Button
+            android:id="@+id/nativeAdCallToAction"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/ad_button_design"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Learn More"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

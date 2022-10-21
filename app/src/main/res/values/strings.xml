@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">New Admob Implementation</string>
+    <string name="ad">Ad</string>
+    <string name="admob">Ad ids</string>
+</resources>
